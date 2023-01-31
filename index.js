@@ -15,7 +15,7 @@ const handleSubmit = () => {
     memeContainer.style.display = 'block';
     
     if (!name.value.trim()) {
-        memeContainer.innerHTML = `<img src='https://media.tenor.com/IkFqKVJ0tSIAAAAM/wait-a-minute.gif' alt='name-meme' />`;
+        memeContainer.innerHTML = `<img src='https://i.kym-cdn.com/photos/images/original/001/535/068/29d.jpg' alt='name-meme' />`;
         setTimeout(() => {
             formContainer.style.display = "block";
             memeContainer.style.display = 'none';
@@ -76,6 +76,7 @@ const handleSubmit = () => {
             memeContainer.style.display = 'none';
             formContainer.style.display = 'block';
         }, 10000);
+        name.value='',password.value='',number.value='',cfmpassword.value='';
     }
 };
 
