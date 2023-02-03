@@ -8,17 +8,19 @@
     <title>Intractive Form</title>
   </head>
   <body>
-    <!-- <div id="meme-container"></div> -->
     <main>
       <div id="form-container">
         <label for="username">Username</label>
         <input type="text" placeholder="Ram Singh" id="name" />
+        <span class="username-span"></span>
         <label for="mobile number">Mobile number</label>
         <span>(should contains 10 digits)</span>
         <input type="number" placeholder="9809067888" id="number" />
+        <span class="number-span"></span>
         <label for="password">Password</label>
         <span>(atleast 8 characters)</span>
         <input type="password" placeholder="password" id="password" />
+        <span class="password-span"></span>
         <label for="confirm password">Confirm password</label>
         <span>(should be same as above)</span>
         <input
@@ -26,10 +28,11 @@
           placeholder="password"
           id="cfmpassword"
         />
+        <span class="confirmpassword-span"></span>
         <button id="submit">Submit</button>
       </div>
     </main>
-    <div id="meme-container"></div>
+    <!-- <div id="meme-container"></div> -->
   </body>
 </html>
 <script src="index.js"></script>
