@@ -5,34 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Intractive Form</title>
+    <title>Interactive Form</title>
   </head>
   <body>
+    <header>
+      <div>
+        <h2><u>Interactive Form</u></h2>
+        <p>
+          This is an <i>Interactive Form</i>, which validates the feild's
+          details in a little mischievous manner like a <i>KID</i>.
+          <b>Have fun!!</b>
+        </p>
+        <p>
+          <i
+            >*** this is meant for only entertainment purpose, we doesn't have
+            any intentions to hurt someone's feelings.</i
+          >
+        </p>
+      </div>
+    </header>
     <main>
       <div id="form-container">
-        <label for="username">Username</label>
+        <div>
+          <h2>Let's Rock'N'Roll Dear</h2>
+          <p class="rules">all the input fields are mandatory to be filled</p>
+        </div>
+        <label for="username">Username <span class="stars">*</span></label>
         <input type="text" placeholder="Ram Singh" id="name" />
-        <span class="username-span"></span>
-        <label for="mobile number">Mobile number</label>
-        <span>(should contains 10 digits)</span>
+        <span id="username-span"></span>
+        <label for="mobile number"
+          >Mobile number <span class="stars">*</span></label
+        >
+        <span class="rules">(should contains 10 digits)</span>
         <input type="number" placeholder="9809067888" id="number" />
-        <span class="number-span"></span>
-        <label for="password">Password</label>
-        <span>(atleast 8 characters)</span>
+        <span id="number-span"></span>
+        <label for="password">Password <span class="stars">*</span></label>
+        <span class="rules">(atleast 8 characters long)</span>
         <input type="password" placeholder="password" id="password" />
-        <span class="password-span"></span>
-        <label for="confirm password">Confirm password</label>
-        <span>(should be same as above)</span>
-        <input
-          type="password"
-          placeholder="password"
-          id="cfmpassword"
-        />
-        <span class="confirmpassword-span"></span>
+        <span id="password-span"></span>
+        <label for="confirm password"
+          >Confirm password <span class="stars">*</span></label
+        >
+        <span class="rules">(should be same as above)</span>
+        <input type="password" placeholder="password" id="cfmpassword" />
+        <span id="confirmpassword-span"></span>
         <button id="submit">Submit</button>
       </div>
     </main>
-    <!-- <div id="meme-container"></div> -->
   </body>
 </html>
 <script src="index.js"></script>
