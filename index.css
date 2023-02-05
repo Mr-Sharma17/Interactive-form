@@ -1,22 +1,68 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: cursive;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+  background-color: blanchedalmond;
 }
-/* #meme-container{
-    border: 1px solid green;
-    text-align: center;
-} */
-#meme-container img{
-    width: 30vw;
-    height: 20vw;
+header > div {
+  text-align: center;
+  font-size: 24px;
+  line-height: 2;
+  margin: 30px auto 50px;
 }
-#form-container{
-    border: 2px solid #000;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 10px;
-    width: 20%;
-    margin: auto;
-    padding: 25px 35px;
+#form-container {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  width: 20%;
+  margin: auto;
+  padding: 25px 35px;
+  border-radius: 0 80px;
+  font-size: 1.2rem;
+}
+#form-container > div {
+  text-align: center;
+  line-height: 2.4;
+  margin: 15px auto 35px;
+}
+#form-container > input {
+  padding: 15px;
+  border-radius: 0 35px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid burlywood;
+  outline: 1px solid burlywood;
+}
+#form-container > label {
+  font-weight: bold;
+}
+#submit {
+  padding: 15px 60px;
+  border-radius: 0 35px;
+  margin: 40px auto 20px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+#submit:hover{
+    background-color: white;
+    color: black;
+    border: 0;
+}
+img {
+  width: 100%;
+  height: 30vh;
+  border-radius: 35px 0;
+}
+.stars {
+  color: red;
+}
+.rules {
+  margin-top: -10px;
+  font-size: 14px;
+  color: #757575;
 }
